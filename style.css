@@ -1,7 +1,23 @@
-body {
-    background-color: rgb(28, 2, 53);
+:root{
 
+    --corfundo: #490240 ;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botaoativo: #3A375E;
+    --botaoinativo: rgba(58,55,94,0.5);
+    --textofundo: rgba(58,55,94,0.5);
+}
+
+
+
+
+body {
+    background-color: var(--corfundo);
 }
 .Titulo1 {
-    color: rgb(236, 231, 231);
+    color: var(--branco);
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: lighter;
 }
+
