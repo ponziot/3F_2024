@@ -1,23 +1,35 @@
 :root{
 
-    --corfundo: #490240 ;
+    --corfundo: #1e1e1e ;
     --verde: #6FFF57;
     --branco: #FFFFFF;
     --botaoativo: #3A375E;
     --botaoinativo: rgba(58,55,94,0.5);
-    --textofundo: rgba(58,55,94,0.5);
+    --textofundo: rgba(58,55,94,0.3);
 }
 
 
 
 
-body {
+*{
     background-color: var(--corfundo);
+    color: var(--branco);
 }
-.Titulo1 {
+.Titulo {
     color: var(--branco);
     font-style: italic;
     font-size: xx-large;
-    font-weight: lighter;
+    font-weight: normal;
+}
+span {
+    color: var(--verde);
 }
 
+.Conteudo {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+
+}
