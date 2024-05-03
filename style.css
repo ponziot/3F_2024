@@ -1,5 +1,4 @@
 :root{
-
     --corfundo: #1e1e1e ;
     --verde: #6FFF57;
     --branco: #FFFFFF;
@@ -8,19 +7,18 @@
     --textofundo: rgba(58,55,94,0.3);
 }
 
-
-
-
 *{
     background-color: var(--corfundo);
     color: var(--branco);
 }
+
 .Titulo {
     color: var(--branco);
     font-style: italic;
     font-size: xx-large;
     font-weight: normal;
 }
+
 span {
     color: var(--verde);
 }
@@ -30,6 +28,45 @@ span {
  flex-direction: column;
  justify-content: center;
  align-items: center;
-
-
+ max-width: 1200px;
+ width: 100%;
+ margin: 0 auto;
 }
+
+.botao {
+    background-color: var(--botaoinativo);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-size: 18px;
+    width: 100%;
+    border-bottom: 4px solid var(--botaoativo);
+    border-left: 2px solid var(--botaoativo);
+    border-right: 2px solid var(--botaoativo);
+}
+
+.butoens {
+    display: block;
+ }
+
+ .botao:first-child {
+     border-radius: 20px 20px 0 0;
+ }
+
+ .botao:last-child {
+     border-radius: 0 0 20px 20px;
+ }
+  @media screen and (min-width: 700px) {
+     .butoens{
+         display: flex;
+        
+     }
+.botao:last-child{
+    border-radius: 0 20px 20px 0;
+}
+.botao:first-child{
+    border-radius: 20px 0 0 20px;
+}
+ }
